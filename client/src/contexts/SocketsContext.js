@@ -14,7 +14,6 @@ const ContextProvider = ({ children }) => {
     const [callEnded, setCallEnded] = useState(false);
     const [name, setName] = useState('');
     
-    const videoRef = useRef();
     const userVideoRef = useRef();
     const connectionRef = useRef();
 
@@ -22,8 +21,6 @@ const ContextProvider = ({ children }) => {
         navigator.mediaDevices.getUserMedia({ audio: true, video: true })
         .then((currentStream) => {
             setStream(currentStream);
-
-            videoRef.current.srcObject = currentStream;
         });
 
         socket.on('me', (id) => setMe(id));
@@ -82,7 +79,6 @@ const ContextProvider = ({ children }) => {
         <SocketContext.Provider value={{
             call,
             callAccepted,
-            videoRef,
             userVideoRef,
             stream,
             name,

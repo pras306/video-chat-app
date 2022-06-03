@@ -1,11 +1,16 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import { Grid, Typography, Paper } from '@material-ui/core';
 
 import './VideoPlayer.css';
 import { SocketContext } from '../../contexts/SocketsContext';
 
 const VideoPlayer = () => {
-  const { name, videoRef, userVideoRef, callAccepted, callEnded, stream, call } = useContext(SocketContext);
+  const { name, userVideoRef, callAccepted, callEnded, stream, call } = useContext(SocketContext);
+  const videoRef = useRef();
+
+  useEffect(() => {
+    if(stream) videoRef.current.srcObject = stream;
+  }, [stream]);
 
   return (
     <Grid className='app__video-player'>
