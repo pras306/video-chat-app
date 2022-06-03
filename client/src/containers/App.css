@@ -1,0 +1,24 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: url(https://i.pinimg.com/originals/8f/14/57/8f14578ef69a4c53352955d1e072eda6.png);
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.app__header h1 {
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0.75rem;
+  min-width: 15vw;
+  background-color: white;
+  font-weight: 600;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.app__content {
+  width: 100%;
+}

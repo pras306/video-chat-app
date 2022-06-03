@@ -1,0 +1,57 @@
+.app__video-player {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 1.2rem;
+}
+
+.app__video-player-paper {
+    min-width: 500px;
+    min-height: 40vh;
+    padding: 1.2rem;
+}
+
+.app__video-player video {
+    width: 500px;
+}
+
+@media screen and (max-width: 1200px) {
+    .app__video-player {
+        gap: 3rem;
+    }
+
+    .app__video-player-paper {
+        min-width: 400px;
+    }
+
+    .app__video-player video {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .app__video-player-paper {
+        min-width: 300px;
+    }
+
+    .app__video-player video {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .app__video-player {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .app__video-player-paper {
+        min-width: 100px;
+        min-height: 20vh;
+    }
+
+    .app__video-player video {
+        width: 200px;
+    }
+}

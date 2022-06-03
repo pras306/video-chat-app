@@ -1,0 +1,19 @@
+.app__notifications {
+    display: flex;
+    justify-content: center;
+    padding: 1.1rem 0;
+}
+
+@media screen and (max-width: 475px) {
+    .app__notifications {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 1.1rem;
+    }
+
+    .app__notifications h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
