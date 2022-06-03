@@ -1,13 +1,9 @@
-# Video Chat Application
-
-![Chatbot messenger](src/assets/images/video-chat-app.png)
-
----
+# Video Chat Server
 
 ### Table of Contents
 
 - [Description](#description)
-- [How To Use](#how-to-use)
+- [How to use](#how-to-use)
 - [License](#license)
 - [Author Info](#author-info)
 
@@ -15,19 +11,23 @@
 
 ## Description
 
-This is a web application for organizing peer-to-peer video conference calls
+The Backend server for handling video call using Socket IO <br />
+
+The Front End for this application is published at [Video Chat Application](https://video-chatserver-app.herokuapp.com/) <br />
+
+To know more information about the front end, refer [Client folder](client/README.md)
 
 #### Technologies
 
-- React JS
+- Node JS
+- Express JS
+- Socket IO
 
-[Back To The Top](#video-chat-application)
+[Back To The Top](#video-chat-server)
 
 ---
 
-## How To Use
-
-The website is published at [Video Chat Application](https://video-chatserver-app.herokuapp.com/)
+## How to use
 
 Clone the project 
 
@@ -38,7 +38,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd video-chat-app/client
+  cd video-chat-app
 ```
 
 Install dependencies
@@ -53,7 +53,13 @@ Start the server
   npm run start
 ```
 
-[Back To The Top](#video-chat-application)
+Start the server and client
+
+```bash
+  npm run dev
+```
+
+[Back To The Top](#video-chat-server)
 
 ---
 
@@ -81,7 +87,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[Back To The Top](#video-chat-application)
+[Back To The Top](#video-chat-server)
 
 ---
 
@@ -91,4 +97,5 @@ SOFTWARE.
 - LinkedIn - [Prasanna Sriram](https://www.linkedin.com/in/prasanna-sriram/)
 - Portfolio - [Personal Portfolio](https://prasanna-sriram.netlify.app/)
 
-[Back To The Top](#video-chat-application)
+[Back To The Top](#chatbot-messenger-api)
+
